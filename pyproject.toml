@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "splinartij"
+name = "splinart-ij"
 dynamic = ["version"]
 requires-python = ">=3.8"
 
@@ -45,7 +45,7 @@ version = { attr = "splinart.version.__version__" }
 include = ["splinart*"]
 
 [project.scripts]
-splinartij = "splinart.scripts.cli_splinart:main"
+splinart-ij = "splinart.scripts.cli_splinart:main"
 
 [project.urls]
 Source = "https://github.com/ijegouzo/splinartij"
@@ -55,7 +55,7 @@ channels = ["conda-forge"]
 platforms = ["osx-arm64", "linux-64", "osx-64", "win-64"]
 
 [tool.pixi.pypi-dependencies]
-splinartij = { path = ".", editable = true }
+splinart-ij = { path = ".", editable = true }
 
 [tool.pixi.feature.pypi-release.tasks]
 sdist = "python -m build --sdist"
