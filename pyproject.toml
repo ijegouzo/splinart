@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "splinart"
+name = "splinartij"
 dynamic = ["version"]
 requires-python = ">=3.8"
 
@@ -12,7 +12,7 @@ dependencies = ["numpy", "matplotlib"]
 license = { file = "LICENSE" }
 
 description = "spline art generator"
-authors = [{ name = "Loic Gouarin", email = "loic.gouarin@gmail.com" }]
+authors = [{ name = "IJ", email = "isabelle.jegouzo@obspm.fr" }]
 
 classifiers = [
     "Development Status :: 3 - Alpha",
@@ -45,17 +45,17 @@ version = { attr = "splinart.version.__version__" }
 include = ["splinart*"]
 
 [project.scripts]
-splinart = "splinart.scripts.cli_splinart:main"
+splinartij = "splinart.scripts.cli_splinart:main"
 
 [project.urls]
-Source = "https://github.com/gouarin/splinart"
+Source = "https://github.com/ijegouzo/splinartij"
 
 [tool.pixi.project]
 channels = ["conda-forge"]
 platforms = ["osx-arm64", "linux-64", "osx-64", "win-64"]
 
 [tool.pixi.pypi-dependencies]
-splinart = { path = ".", editable = true }
+splinartij = { path = ".", editable = true }
 
 [tool.pixi.feature.pypi-release.tasks]
 sdist = "python -m build --sdist"
