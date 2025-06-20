@@ -12349,9 +12349,9 @@ packages:
   size: 28669
   timestamp: 1733750596111
 - pypi: ./
-  name: splinart-ij
-  version: 0.1.0
-  sha256: dec7d1368e2d39edc8d42a8f0b6d7a5c61699e0b456ede49c8d3ff82219f4a43
+  name: splinart-ij2
+  version: 0.1.1
+  sha256: d28ec9984b5de460568bb46fa16dde1a7eb621a0f750af49d7bd4833709c005e
   requires_dist:
   - numpy
   - matplotlib
